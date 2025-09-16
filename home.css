@@ -87,6 +87,9 @@ a{
 }
 
 /* sign in and become a driver botton at nav  */
+.navbutton{
+  display: flex;
+}
 .navbutton button{
     margin-right: 20px;
     width: 150px;
