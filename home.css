@@ -74,7 +74,7 @@ header{
 /* ul list for nav */
 ul{
     display: flex;
-    gap: 60px;
+    gap: 30px;
     list-style: none;
     font-size: 30px;
     color: #130741;
@@ -92,13 +92,14 @@ a{
 }
 .navbutton button{
     margin-right: 20px;
-    width: 150px;
+    width: 140px;
     height: 50px;
     border-radius: 10px;
     background-color: #E39400;
     color: antiquewhite;
     font-size: 16px;
     border-color: antiquewhite;
+    white-space: nowrap;
 }
 
 /* container for form and hero img  */
