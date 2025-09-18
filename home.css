@@ -49,7 +49,7 @@ body{
 }
 
 
-/* header */
+/*=====header=====*/
 header{
     background-color: white;
     width: 100%;
@@ -65,14 +65,14 @@ header{
    
 }
 
-/* .logo */
+/*=====.logo=====*/
 .logo img{
     width: 180px;
     position: relative;
     left: 20px;
 }
 
-/* ul list for nav */
+/*=====ul list for nav=====*/
 ul{
     display: flex;
     gap: 30px;
@@ -84,9 +84,20 @@ ul{
 ul a{
     text-decoration: none;
     color: #130741;
+    position: relative;
 }
 
-/* sign in and become a driver botton at nav  */
+ /* a::after{
+  content: ;
+  position: absolute;
+  background-color: #E39400;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+} */
+
+/*========sign in and become a driver botton at nav========*/
 .navbutton{
   display: flex;
   padding-right: 2%;
@@ -105,16 +116,16 @@ ul a{
     white-space: nowrap;
 }
 
-/* container for form and hero img  */
+/*======section for form and hero img======*/
 .main{
-  width: 100%;
+    max-width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    /* justify-content: space-between; */
-    /* margin: 50px; */
+    margin: 50px;
 }
 
-/* form for booking  */
+/*======form for booking======*/
 .form{
   width: 100%;
 }
@@ -156,17 +167,19 @@ ul a{
 
 
 
-h2{
-   
-    margin-left: 50px;
-    font-size: 40px;
+.form h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0;
     color: #130741;
 }
 
-h5{
-    margin-left: 80px;
-    font-size: 22px;
-    margin-top: -30px;
+.form h5{
+    text-align:center;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 0;
     color: #130741;
 }
 .form{
@@ -186,7 +199,6 @@ h5{
     height: 60px;
     width: 200px;
     background-color: #E39400;
-    color:#130741;
     border: none;
     border-radius: 10px;
 }
@@ -195,10 +207,11 @@ h5{
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+  color: #130741;
 }
 
 
-/* hero img  */
+/*=====hero img=====*/
 
 .hero img{
     width: 800px;
@@ -208,21 +221,23 @@ h5{
 }
 
 
-/* best prices section  */
+/*=======best prices section======*/
 .prices{
     text-align: center;
+    margin-top: 100px;
 }
 .prices h1{
-    font-size: 60px;
+    font-size: 45px;
+    line-height: 0;
     color: #130741;
 }
 .prices p{
-    font-size: 25px;
-    margin-top: -30px;
+    font-size: 20px;
+    /* margin-top: -30px; */
     color: #130741;
 }
 
-/* Container  cards */
+/*======Container cards======*/
 .card-container {
   display: flex;
   flex-wrap: nowrap;       
@@ -234,13 +249,13 @@ h5{
   scroll-behavior: smooth; 
 }
 
-/* Hide scrollbar for browser*/
+/*=======Hide scrollbar for browser=====*/
 .card-container::-webkit-scrollbar {
   display: none;
 }
 
 
-/* Card */
+/*========Card======*/
 .card {
   background: #fff;
   border-radius: 10px;
@@ -253,14 +268,14 @@ h5{
   align-items: center;
 }
 
-/* Image */
+/*=====Image======*/
 .card img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Content */
+/*======Content======*/
 .card-content{
   display: flex;
   flex-direction: column;
@@ -269,33 +284,35 @@ h5{
   flex-grow: 1;
 }
 
-/* Heading */
-.card h3 {
+/*=====Heading======*/
+.card-content h3 {
   font-size: 24px;
+  font-weight: bold;
+  line-height: 0;
   margin: 10px 0;
   color: #130741;
 }
 
-/* Paragraph */
-.card p{
+/*=====Paragraph====*/
+.card-content p{
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
   color: #130741;
 }
 
-/* Button */
+/*====Button=====*/
 .card a{
   padding: 15px 25px;
   text-decoration: none;
+  font-size: 13px;
   border-radius: 5px;
   background-color: #E39400;
   color: #130741;
-  margin-top: auto;       /* push button down */
-  display: inline-block;
+  margin-top: auto;       
 }
 
-/* your safety section */
+/*=======your safety section======*/
 .safety{
  text-align: center;
  margin-top: 100px;
@@ -303,23 +320,26 @@ h5{
 }
 
 .safety h1{
-    font-size: 60px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
     color: #130741;
 }
 
 .safety p{
-    font-size: 32px;
-    margin-top: -30px;
+    font-size: 24px;
+    line-height: 0;
     color: #130741;
 }
 
 .safe img{
-    width: 100%;
+    width: 95%;
+    margin-top: 80px;
 }
 
 
 
-/* our partners section */
+/*=======our partners section======*/
 .partners{
     text-align: center;
    width: 100%;
@@ -327,12 +347,14 @@ h5{
 
 
 .our-partner h1{
-    font-size: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: normal;
     color: #130741;
 }
 
 .our-partner p{
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 30px;
     color: #130741;
 }
@@ -346,21 +368,22 @@ h5{
 .partnerimg{
    display: grid;
   grid-template-columns: repeat(11, 1fr);
-  /* gap: 20px; */
   justify-items: center;
   margin-top: 5%;
-  /* padding: 30px; */
-
 }
 
 
 /* ======feedback section======= */ 
 .feedbackmain{
   width: 100%;
+  margin-top: 100px;
 }
 .feedbackmain h5{
-  font-size: 42px;
-  margin-top: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 0;
+  color: #130741;
+  margin-left: 50px;
 }
 
 
@@ -370,43 +393,43 @@ h5{
   margin: auto;
   width: 90%;
   border: solid 2px #130741;
-  padding: 20px;
+  padding: 10px;
 }
 
 
 .feedback1{
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
   text-align: center;
   
 }
 
 .feedbackimg img{
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
-/* =====the paragraph under the images */
+/* =====the paragraph under the images=====*/
 .feedbackimg p{
-  font-size: 22px;
+  font-size: 18px;
   color: #130741;
 }
 
 
-/* ====to remove the margin beteen the text */
+/* ====to remove the margin beteen the text=====*/
 .feedbackname2{
   margin: 0;
 }
 
-/* ====for color of the star */
+/* ====for color of the star=====*/
 .feedbackname2 span{
   color:#E39400;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .feedbackname2 p{
-  font-size: 28px;
+  font-size: 24px;
   color: #130741;
   margin: 0;
 }
@@ -418,44 +441,42 @@ h5{
   justify-content: space-between;
   margin-top: 5%;
   margin-bottom: 5%;
-  /* align-items: end; */
 }
 
 .lastsectiontext{
   margin-top: 150px;
-  /* margin-left: 50px; */
   padding-left: 4%;
 }
 
 .lastsectiontext h1{
-  font-size: 42px;
+  font-size: 30px;
+  font-weight: 100;
   color: #130741;
 }
 
 .lastsectiontextbotton{
-  width: 450px;
+  width: 270px;
   height: 50px;
   border: none;
   background-color: #E39400;
-  color: #130741;
 }
 
 .lastsectiontextbotton a{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
+  color: #130741;
 }
 
 
 .lastsectionimg img{
-  /* padding-top: 50px; */
-  /* padding-bottom: 50px; */
   width: 500px;
   height: 400px;
 }
 
 /* =======footer====== */
 .footer{
+  width: 100%;
   background-color:#130741;
 
 }
@@ -472,7 +493,7 @@ h5{
 }
 
 .footerlogo h1{
-  font-size: 46px;
+  font-size: 32px;
   font-weight: bold;
   color:#E39400;
 }
@@ -486,19 +507,21 @@ h5{
 }
 
 .myteam h6{
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: bold;
   color: white;
 }
 
 .myteam button{
-  width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 60px;
   border-radius: 12px;
   background-color: #E39400;
 }
 
 .myteambutton a{
-  font-size: 18px;
+  text-decoration: none;
+  font-size: 15px;
   font-weight: bold;
   color: #130741;
 }
@@ -514,7 +537,7 @@ h5{
   display: flex;
   justify-content: space-between;
   width: 45%;
-  font-size: 16px;
+  font-size: 15px;
   color: white;
 }
 
@@ -531,18 +554,190 @@ h5{
 }
 
 .footer2roll1b button{
-  width: 180px;
-  height: 70px;
+  width: 120px;
+  height: 60px;
+  border: none;
   border-radius: 12px;
   background-color:#E39400;
 }
 
 .registerbutton a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
+  color: #130741;
 }
+/* ===========================
+   Responsive Styles for Mobile (<= 640px)
+   =========================== */
+@media (max-width: 640px) {
 
+  /* Prevent horizontal scroll */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
 
+  .logo img {
+    width: 130px;
+  }
 
+  /*=====Hide nav menu on mobile======*/
+  nav {
+    display: none;
+  }
+
+  /*=====Only show Sign In button=====*/
+  .navbutton {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+   /*=====hide "Become a Driver"=====*/
+  .navbutton button:first-child {
+    display: none;
+  }
+
+  .navbutton button:last-child {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  /*======Main section form & hero===== */
+  .main {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-input input {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+  }
+
+  .book {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /*======Prices section=====*/
+  .prices h1 {
+    font-size: 28px;
+  }
+  .prices p {
+    font-size: 16px;
+  }
+
+  /*=====Cards=====*/
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /*======Safety section=====*/
+  .safety h1 {
+    font-size: 28px;
+  }
+  .safety p {
+    font-size: 18px;
+  }
+
+  /*=====Partners section=====*/
+  .partnerimg {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .partners img {
+    width: 80px;
+  }
+
+  /*=====Feedback======*/
+  .feedback {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feedback1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feedbackimg img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /*======Last section======*/
+  .lastsection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lastsectiontext {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .lastsectionimg img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*=====Footer=====*/
+  .footer1 {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .myteam {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer2roll1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer2roll1a,
+  .footer2roll1b {
+    margin: 0;
+  }
+}
