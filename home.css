@@ -73,7 +73,7 @@ header{
 }
 
 /*=====ul list for nav=====*/
-ul{
+.navlist{
     display: flex;
     gap: 30px;
     list-style: none;
@@ -81,21 +81,36 @@ ul{
 }
 
 
-ul a{
+.navlist a{
     text-decoration: none;
     color: #130741;
     position: relative;
+    transition: .5s ease;
+    padding: 10px 0;
 }
 
- /* a::after{
-  content: ;
+.navlist a:hover{
+  color: #E39400;
+}
+
+.navlist a::after{
+  content: "";
   position: absolute;
-  background-color: #E39400;
-  height: 3px;
-  width: 100%;
+  bottom: 0;
   left: 0;
-  bottom: -10px;
-} */
+  width: 0;
+  height: 3px;
+  background-color: #E39400;
+  transition: width 0.3s ease;
+}
+
+.navlist a:hover::after{
+  width: 100%;
+
+}
+
+
+
 
 /*========sign in and become a driver botton at nav========*/
 .navbutton{
@@ -114,6 +129,10 @@ ul a{
     font-size: 16px;
     border-color: antiquewhite;
     white-space: nowrap;
+}
+
+.navbutton :hover{
+  color:#130741;
 }
 
 /*======section for form and hero img======*/
@@ -208,6 +227,10 @@ ul a{
   font-size: 20px;
   font-weight: bold;
   color: #130741;
+}
+
+.book :hover{
+  color: white;
 }
 
 
@@ -310,6 +333,10 @@ ul a{
   background-color: #E39400;
   color: #130741;
   margin-top: auto;       
+}
+
+.card a:hover{
+  color: white;
 }
 
 /*=======your safety section======*/
@@ -468,6 +495,10 @@ ul a{
   color: #130741;
 }
 
+.lastsectiontextbotton a:hover{
+  color: white;
+}
+
 
 .lastsectionimg img{
   width: 500px;
@@ -526,6 +557,10 @@ ul a{
   color: #130741;
 }
 
+.myteambutton a:hover{
+  color: white;
+}
+
 /* ====footer roll2==== */
 .footer2{
   display: flex;
@@ -566,6 +601,10 @@ ul a{
   font-size: 15px;
   font-weight: bold;
   color: #130741;
+}
+
+.registerbutton a:hover{
+  color: white;
 }
 /* ===========================
    Responsive Styles for Mobile (<= 640px)
